@@ -1,10 +1,14 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 contract IpcRegional {
     address public parentRoot;
     string public parentSubnetId;
-    mapping(string => address) regionData; // Change mapping value type to address
+    mapping(string => address) regionData;
+    mapping(string => bool) createdRegions; // Change back to string
+    mapping(string => bool) createdContinents; // Change back to string
+    string[] public regionKeys; // Change to string array
+    string[] public continentKeys; // Change to string array
 
     event DataUpdated(string region, address userAddress);
     event RegionCreated(string region);
@@ -19,14 +23,19 @@ contract IpcRegional {
         parentSubnetId = _parentSubnetId;
     }
 
-    function setData(string memory region, address userAddress) external onlyParent {
+    function createRegion(string memory region, address userAddress) external onlyParent {
+        require(!createdRegions[region], "Region already exists");
         regionData[region] = userAddress;
+        createdRegions[region] = true;
+        regionKeys.push(region); // Store the region directly
         emit DataUpdated(region, userAddress);
     }
 
-    function createRegion(string memory region) external {
-        require(regionData[region] == address(0), "Region already exists");
+    function createContinent(string memory region) external {
+        require(!createdContinents[region], "Continent already exists");
         regionData[region] = msg.sender;
+        createdContinents[region] = true;
+        continentKeys.push(region); // Store the continent directly
         emit RegionCreated(region);
     }
 
@@ -41,5 +50,13 @@ contract IpcRegional {
 
     function getData(string memory region) external view returns (address) {
         return regionData[region];
+    }
+
+    function getCreatedRegions() external view returns (string[] memory) {
+        return regionKeys; // Return the array of strings
+    }
+
+    function getCreatedContinents() external view returns (string[] memory) {
+        return continentKeys; // Return the array of strings
     }
 }

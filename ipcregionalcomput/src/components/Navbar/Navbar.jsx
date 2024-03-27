@@ -142,9 +142,12 @@ const Navbar = () => {
             </nav>
           </SheetContent>
         </Sheet>
-        <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
-          <ConnectButton />
-        
+        <div className="flex ml-[93rem] w-full items-center gap-4  md:gap-2 lg:gap-4 ">
+                  <ConnectButton
+           accountStatus={{
+    smallScreen: 'avatar',
+    largeScreen: 'full',
+  }}/>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
@@ -161,6 +164,8 @@ const Navbar = () => {
               <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
+
         </div>
       </header>
     </div>
