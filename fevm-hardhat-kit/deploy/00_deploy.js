@@ -1,5 +1,6 @@
 require("hardhat-deploy")
 require("hardhat-deploy-ethers")
+const hre = require("hardhat");
 
 const { networkConfig } = require("../helper-hardhat-config")
 
@@ -15,39 +16,49 @@ module.exports = async ({ deployments }) => {
 
     
     //deploy Simplecoin
-    const simpleCoin = await deploy("SimpleCoin", {
-        from: wallet.address,
-        args: [tokensToBeMinted],
-        log: true,
-    });
+    // const simpleCoin = await deploy("SimpleCoin", {
+    //     from: wallet.address,
+    //     args: [tokensToBeMinted],
+    //     log: true,
+    // });
 
-    //deploy FilecoinMarketConsumer
-    const filecoinMarketConsumer = await deploy("FilecoinMarketConsumer", {
-        from: wallet.address,
-        args: [],
-        log: true,
-    });
+    // //deploy FilecoinMarketConsumer
+    // const filecoinMarketConsumer = await deploy("FilecoinMarketConsumer", {
+    //     from: wallet.address,
+    //     args: [],
+    //     log: true,
+    // });
 
-    //deploy DealRewarder
-    const dealRewarder = await deploy("DealRewarder", {
-        from: wallet.address,
-        args: [],
-        log: true,
-    });
+    // //deploy DealRewarder
+    // const dealRewarder = await deploy("DealRewarder", {
+    //     from: wallet.address,
+    //     args: [],
+    //     log: true,
+    // });
     
-    //deploy DealClient
-    const dealClient = await deploy("DealClient", {
+    // //deploy DealClient
+    // const dealClient = await deploy("DealClient", {
+    //     from: wallet.address,
+    //     args: [],
+    //     log: true,
+    // });
+
+    //  const parentRoot = "0x6950a8Ef71d4D1AA919a9712925716A9BD628bDd";
+    // const parentSubnetId = "314159";
+
+    //     const IpcRegional = await deploy("IpcRegional", {
+    //     from: wallet.address,
+    //     args: [parentRoot, parentSubnetId],
+    //     log: true,
+    //     });
+      const Tableland = await deploy("Tableland", {
         from: wallet.address,
         args: [],
         log: true,
-    });
+        });
 
-     const parentRoot = "0x6950a8Ef71d4D1AA919a9712925716A9BD628bDd";
-    const parentSubnetId = "314159";
 
-        const IpcRegional = await deploy("IpcRegional", {
-        from: wallet.address,
-        args: [parentRoot, parentSubnetId],
-        log: true,
-    });
+
+
+
 }

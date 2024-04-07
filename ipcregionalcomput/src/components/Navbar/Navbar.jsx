@@ -142,8 +142,9 @@ const Navbar = () => {
             </nav>
           </SheetContent>
         </Sheet>
-        <div className="flex ml-[93rem] w-full items-center gap-4  md:gap-2 lg:gap-4 ">
-                  <ConnectButton
+
+        <div className="flex ml-[55rem] w-full items-center gap-4  md:gap-2 lg:gap-4 ">
+                          <ConnectButton
            accountStatus={{
     smallScreen: 'avatar',
     largeScreen: 'full',
