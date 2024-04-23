@@ -25,7 +25,9 @@ Both the Regional and Database Subnets are managed by smart contracts, facilitat
 
 IPC's architecture unlocks a new era of web3 scaling and flexibility, with recursively scalable subnets, sub-second transactions, robust compute workloads, and highly adaptable WebAssembly runtimes tailored to developer requirements. This allows for the creation of flexible, dynamic networks of customizable sidechains or "subnets," which can achieve massive scaling by running parallel chains that interoperate with one another.
 
-IPSE leverages IPC's capabilities to bring compute onto the Filecoin network, enabling the creation of a decentralized storage marketplace that not only addresses the challenges of high on-chain data storage costs, lack of rewards for data owners, and GDPR compliance but also ensures scalability and efficiency, making it a pivotal innovation in the storage ecosystem [4].
+IPSE leverages IPC's capabilities to bring compute onto the Filecoin network, enabling the creation of a decentralized storage marketplace that not only addresses the challenges of high on-chain data storage costs, lack of rewards for data owners, and GDPR compliance but also ensures scalability and efficiency, making it a pivotal innovation in the storage ecosystem.
+
+# Subnet Setup and Validator Management
 <img src="https://github.com/DeImOs-Sj/IpcRegionalComputation/blob/main/images/terminal2.jpeg"><br>
 <img src="https://github.com/DeImOs-Sj/IpcRegionalComputation/blob/main/images/terminal1.jpeg"><br>
 <img src="https://github.com/DeImOs-Sj/IpcRegionalComputation/blob/main/images/terminal4.jpeg"><br>
