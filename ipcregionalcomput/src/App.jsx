@@ -4,6 +4,9 @@ import {Routes,Route} from "react-router-dom"
 import Create from "./components/CreateRegion/Create"
 import Navbar from "./components/Navbar/Navbar"
 import SubRegions from "./components/subregions/Subregions"
+import Buy from "./components/Buy/Buy"
+import Files from "./components/Files/Files"
+import StorageProvider from "./components/StorageProvider/StorageProvider"
 function App() {
 
   return (
@@ -24,9 +27,13 @@ function App() {
           path="/create_region"
           element={<Create />}
         />
-                <Route path="/subregions" element={<SubRegions />} />
+        <Route path="/subregions" element={<SubRegions />} />
+        <Route path="/buy" element={<Buy />} />
 
-       {/*  <Route path="/subregions" element={<SubRegions />} /> */}
+
+        <Route path="/files" element={<Files />} />
+        <Route path="/storageprovider" element={<StorageProvider />} />
+
       </Routes> 
 
 

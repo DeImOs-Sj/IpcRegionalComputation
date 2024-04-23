@@ -43,20 +43,15 @@ module.exports = async ({ deployments }) => {
     //     log: true,
     // });
 
-    //  const parentRoot = "0x6950a8Ef71d4D1AA919a9712925716A9BD628bDd";
-    // const parentSubnetId = "314159";
+     const parentRoot = "0x6950a8Ef71d4D1AA919a9712925716A9BD628bDd";
+    const parentSubnetId = "314159";
 
-    //     const IpcRegional = await deploy("IpcRegional", {
-    //     from: wallet.address,
-    //     args: [parentRoot, parentSubnetId],
-    //     log: true,
-    //     });
-      const Tableland = await deploy("Tableland", {
+        const IpcRegional = await deploy("IpcRegional", {
         from: wallet.address,
-        args: [],
+        args: [parentRoot, parentSubnetId],
         log: true,
         });
-
+     
 
 
 

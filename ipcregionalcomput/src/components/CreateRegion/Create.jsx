@@ -8,7 +8,7 @@ import { ethers } from 'ethers';
 import ipcregional from '../../abis/ipcregional.json';
 import SubRegions from "../subregions/Subregions"
 
-const contractAddress ='0xDb0f53e880Eb466F52fe1C975B0158fF5BB93ea3'; // Update with your contract address
+const contractAddress ='0x35504B981aEa840C72dBAe9037eC5D6Fc0cbF3f9'; // Update with your contract address
 
 const Create = () => {
   const [region, setRegion] = useState('');
@@ -45,7 +45,7 @@ const Create = () => {
   };
 
   return (
-    <div className='flex justify-center mt-[21rem]'>
+    <div className='flex justify-center mt-[12rem]'>
       <Tabs defaultValue="account" className="w-[400px]">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="account">Continent</TabsTrigger>

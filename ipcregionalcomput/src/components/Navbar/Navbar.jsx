@@ -91,6 +91,12 @@ const Navbar = () => {
           >
             Files
           </Link>
+           <Link
+            to="/storageprovider"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            StorageProvider
+          </Link>
         </nav>
         <Sheet>
           <SheetTrigger asChild>

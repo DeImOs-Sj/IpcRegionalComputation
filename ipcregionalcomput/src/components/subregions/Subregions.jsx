@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import ipcregional from '../../abis/ipcregional.json';
 
-const contractAddress ='0xDb0f53e880Eb466F52fe1C975B0158fF5BB93ea3'; // Update with your contract address
+const contractAddress ='0x35504B981aEa840C72dBAe9037eC5D6Fc0cbF3f9'; // Update with your contract address
 
 const SubRegion = (props) => {
   const [createdRegions, setCreatedRegions] = useState([]);
