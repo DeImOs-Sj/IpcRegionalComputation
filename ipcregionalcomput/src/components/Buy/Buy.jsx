@@ -51,7 +51,7 @@ const BuyStoragePage = () => {
                             required 
                         />
 
-                        <label htmlFor="amount" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Amount (ETH)</label>
+                        <label htmlFor="amount" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Amount (FIL)</label>
                         <input 
                             id="amount" 
                             type="number" 

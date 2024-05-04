@@ -279,7 +279,7 @@ const SellersInfo = () => {
                 </div>
             </div>
         </div>
-        <div className="bg-white rounded-lg shadow-xl p-8">
+        {/* <div className="bg-white rounded-lg shadow-xl p-8">
             <div className="flex items-center justify-between">
                 <h4 className="text-xl text-gray-900 font-bold">StorageProvided (532)</h4>
                 <a href="#" title="View All">
@@ -370,7 +370,7 @@ const SellersInfo = () => {
                     <p className="text-xs text-gray-500 text-center">Team Lead at Facebook</p>
                 </a>
             </div>
-        </div>
+        </div> */}
     </div >
        
            </>
