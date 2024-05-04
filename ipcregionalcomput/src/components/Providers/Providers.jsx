@@ -82,7 +82,7 @@ const Providers = () => {
                                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                                     <div className="flex items-center gap-x-6">
                                         <button className="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                            Archive
+                                            <a href="/sellers_info">Info</a>
                                         </button>
 
                                         <button className="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
@@ -120,7 +120,7 @@ const Providers = () => {
                                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                                     <div className="flex items-center gap-x-6">
                                         <button className="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                            Archive
+                                            Info
                                         </button>
 
                                         <button className="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
@@ -159,7 +159,7 @@ const Providers = () => {
                                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                                     <div className="flex items-center gap-x-6">
                                         <button className="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                            Archive
+                                            Info
                                         </button>
 
                                         <button className="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
@@ -197,7 +197,7 @@ const Providers = () => {
                                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                                     <div className="flex items-center gap-x-6">
                                         <button className="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                            Archive
+                                            Info
                                         </button>
 
                                         <button className="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
@@ -235,7 +235,7 @@ const Providers = () => {
                                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                                     <div className="flex items-center gap-x-6">
                                         <button className="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                            Archive
+                                            Info
                                         </button>
 
                                         <button className="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">

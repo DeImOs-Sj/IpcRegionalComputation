@@ -1,13 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     <title>Vite + React</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const DATA_SET_VERTICAL_BAR_CHART_1 = [
+        68.106, 26.762, 94.255, 72.021, 74.082, 64.923, 85.565, 32.432, 54.664,
+        87.654, 43.013, 91.443,
+      ];
+
+      const labels_vertical_bar_chart = [
+        "January",
+        "February",
+        "Mart",
+        "April",
+        "May",
+        "Jun",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const dataVerticalBarChart = {
+        labels: labels_vertical_bar_chart,
+        datasets: [
+          {
+            label: "Revenue",
+            data: DATA_SET_VERTICAL_BAR_CHART_1,
+            borderColor: "rgb(54, 162, 235)",
+            backgroundColor: "rgba(54, 162, 235, 0.5)",
+          },
+        ],
+      };
+      const configVerticalBarChart = {
+        type: "bar",
+        data: dataVerticalBarChart,
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "Last 12 Months",
+            },
+          },
+        },
+      };
+
+      var verticalBarChart = new Chart(
+        document.getElementById("verticalBarChart"),
+        configVerticalBarChart
+      );
+    </script>
   </body>
 </html>

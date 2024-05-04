@@ -7,6 +7,7 @@ import SubRegions from "./components/subregions/Subregions"
 import Buy from "./components/Buy/Buy"
 import Files from "./components/Files/Files"
 import StorageProvider from "./components/StorageProvider/StorageProvider"
+import SellerProvider from './components/SellersInfo/SellersInfo'
 function App() {
 
   return (
@@ -33,6 +34,7 @@ function App() {
 
         <Route path="/files" element={<Files />} />
         <Route path="/storageprovider" element={<StorageProvider />} />
+        <Route path="/sellers_info" element={<SellerProvider />} />
 
       </Routes> 
 
